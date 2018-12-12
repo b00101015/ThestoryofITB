@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>history</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="images/Asset 1.png" alt="logo">
+		</div>
+			<!-- nav -->
+	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="localarea.html">Local Area</a></li>
+            <li><a href="historyofitb.html">History of ITB</a></li>
+            <li><a href="Ecology.html">Ecology</a></li>
+			<li><a href="personal.html">Personal Stories</a></li>
+			<li><a href="contact.html">Contact ITB</a></li>
+        </ul>
+		<a href="#" id="pull">Menu</a>
+    </nav>
+    <!-- /nav -->	
+		
+		
+	</header>
+	<!--/header-->
+	
+	<h1> Welcome to the History of ITB</h1>
+	<p class="historyp">Take a walk through time with our interactive storytelling.</p>
+	
+	<!--pullup-->
+<div class="container">
+  <img src="images/file3.jpeg" alt="opening" class="historyitb">
+  <div class="overlay">
+    <div class="text">
+In 1999 ITB was opened.<br><br>
+		Bertie Aheren contributed greatly to the campus and college.
+	 
+	  </div>
+  </div>
+</div>
+	
+	<div class="container">
+  <img src="images/DSC_0111.JPG" alt="Avatar" class="historyitb">
+  <div class="overlay">
+    <div class="text">In 2003, the Linc building was opened offically.<br><br>
+	  Thr first graduations also took place in 2003.
+	  </div>
+  </div>
+</div>
+	
+	
+	<div class="container">
+  <img src="images/ITBlogo4.jpg" alt="Avatar" class="historyitb">
+  <div class="overlay">
+    <div class="text">In 2006, the new ITB logo was launched. 
+	  </div>
+  </div>
+</div>
+	
+	
+<div class="container">
+  <img src="images/CDM.jpg" alt="Avatar" class="historyitb">
+  <div class="overlay">
+    <div class="text">In 2009, The Creative Digital Media course was first launched. <br><br>
+		ITB also launched its Bebo and Twitter account in order to reach more students and incoming students, especially with the snow fall that year.
+	  </div>
+  </div>
+</div>	
+	
+<div class="container">
+  <img src="images/tenyear.jpg" alt="Avatar" class="historyitb">
+  <div class="overlay">
+    <div class="text">In 2009, ITB celebrated its 10th birthday. It celebrated with a community day for the local area and the students.<br><br>
+		It also inculded an alumni publication and a reunion for past staff and students.
+	  </div>
+  </div>
+</div>		
+	
+	
+	
+<div class="container">
+  <img src="images/TU4DApplication22.jpg" alt="Avatar" class="historyitb">
+  <div class="overlay">
+    <div class="text">In 2012, the TU Dublin alliance was first formed. It combined ITB, ITT and DIT. <br><br>
+	  </div>
+  </div>
+</div>		
+	
+	
+	<div class="container">
+  <img src="images/Leoleg.jpg" alt="Avatar" class="historyitb">
+  <div class="overlay">
+    <div class="text">In March 2018, the Technological Universities Act 2018 was signed into law.<br><br> 
+		2 weeks after it was signed into law, the alliance submitted an application to become the first technological university for Ireland.
+	  </div>
+  </div>
+</div>	
+	
+		<div class="container">
+  <img src="images/TU2.jpg" alt="Avatar" class="historyitb">
+  <div class="overlay">
+    <div class="text">On the 17th of July 2018, the application to become the first technological university for Ireland was succesful. <br><br>
+		In January 2019, the Universities will offically become TU Dublin. A new logo and website for the university is set to launch in 2019. 
+	  </div>
+  </div>
+</div>
+	
+	
+	
+	
+	
+	
+</body>
+			<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="#"><img src="images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="#"><img src="images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+
+</html>

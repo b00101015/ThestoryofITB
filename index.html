@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="images/Asset 1.png" alt="logo">
+		</div>
+	
+			<!-- nav -->
+	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="localarea.html">Local Area</a></li>
+            <li><a href="historyofitb.html">History of ITB</a></li>
+            <li><a href="Ecology.html">Ecology</a></li>
+			<li><a href="personal.html">Personal Stories</a></li>
+			<li><a href="contact.html">Contact ITB</a></li>
+        </ul>
+		<a href="#" id="pull">Menu</a>
+    </nav>
+    <!-- /nav -->	
+		
+	</header>
+	<!--/header-->
+	<!-- hero -->
+<div id="hero">
+	<img src="images/canteen.jpg" alt="Shannon Crees Mural" class="canteenhero"> 
+</div>
+<!-- /hero -->
+
+	<!--/hero banner-->
+	
+<!--full width column -->
+<section class="row">
+    <h1>Welcome to the Story of ITB</h1>
+    <p></p>
+    
+    <!-- col left -->
+    <section class="column">
+      <a href="Ecology.html"><img src="images/grounds.jpeg" alt="grounds" class="grounds"> </a>
+        <h2>Explore the Flora and Fauna on our grounds</h2>
+        <p>We have a wide variety of plants and animals on the ITB grounds. Check out some of them!</p>
+    </section>
+    <!-- col left -->
+    <!-- col center -->
+	<section class="column">
+        <a href="localarea.html"><img src="images/oldmap.jpeg" alt="oldmap" class="oldmap"> </a>
+        <h2>Explore the area and towns suronding ITB</h2>
+        <p>Take a look at the history of the towns and are around the college.</p>
+    </section>
+    <!-- / col center -->
+    <!-- col right -->
+	<section class="column">
+        <a href="historyofitb.html"><img src="images/TU2.jpg" alt="tud" class="tudindex"> </a>
+        <h2>Explore the History of ITB</h2>
+        <p>Take a walk through time with our interactive images and see how we came to be TU Dublin</p>
+    </section>
+    <!-- / col right -->
+</section>
+<!-- /full width column -->
+
+		
+	
+</body>
+		
+		
+	<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="#"><img src="images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="#"><img src="images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+
+</html>

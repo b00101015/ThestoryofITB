@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+	
+<body>
+	
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="images/Asset 1.png" alt="logo">
+		</div>
+		<!-- nav -->
+	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="localarea.html">Local Area</a></li>
+            <li><a href="historyofitb.html">History of ITB</a></li>
+            <li><a href="Ecology.html">Ecology</a></li>
+			<li><a href="personal.html">Personal Stories</a></li>
+			<li><a href="contact.html">Contact ITB</a></li>
+        </ul>
+		<a href="#" id="pull">Menu</a>
+    </nav>
+    <!-- /nav -->	
+	</header>
+		
+	<!--full width column -->
+<section class="row">
+    <h1>The Ecology and Enviroment of ITB</h1>
+    <p class="ecop">We have a wide variety of plants and animals on the ITB grounds. Check out some of them!</p>
+    
+    <!-- col left -->
+    <section class="column">
+        <!--fade in overlay-->
+	<div class="fadeincontainer">
+  <img src="images/grounds.jpeg" alt="Avatar" class="imagefade">
+  <div class="overlayfade">
+    <div class="textfade">The ITB campus has over 1200 hectres of linear woodland cover.</div>
+  </div>
+</div>
+		<!--/fade-->
+		
+		        <!--fade in overlay-->
+	<div class="fadeincontainer">
+  <img src="images/mushroom.jpg" alt="Avatar" class="imagefade mushroom">
+  <div class="overlayfade">
+    <div class="textfade">Wild mushrooms are on campus and help make the soil rich.</div>
+  </div>
+</div>
+			<!--/fade-->
+    </section>
+    <!-- col left -->
+	
+    <!-- col center -->
+	<section class="column">
+                <!--fade in overlay-->
+	<div class="fadeincontainer">
+  <img src="images/grove.jpg" alt="Avatar" class="imagefade">
+  <div class="overlayfade">
+    <div class="textfade">The Grove of treesshown on the left holds many species of Flora and Fauna.</div>
+  </div>
+</div>
+       <!--/fade--> 
+		
+		 <!--fade in overlay-->
+	<div class="fadeincontainer">
+  <img src="images/stjohn.jpg" alt="Avatar" class="imagefade stjohn">
+  <div class="overlayfade">
+    <div class="textfade">Hundreds of St John flowers have been grown on Campus.</div>
+  </div>
+</div>
+       <!--/fade--> 
+		
+    </section>
+    <!-- / col center -->
+	
+    <!-- col right -->
+	<section class="column">
+		                <!--fade in overlay-->
+	<div class="fadeincontainer">
+  <img src="images/Horticulture.jpg" alt="Avatar" class="imagefade horticulture">
+  <div class="overlayfade">
+    <div class="textfade">The roof of the Horticulture building is made of Seedem</div>
+  </div>
+</div>
+       <!--/fade--> 
+		
+		 <!--fade in overlay-->
+	<div class="fadeincontainer">
+  <img src="images/litchen.jpg" alt="Avatar" class="imagefade litchen">
+  <div class="overlayfade">
+    <div class="textfade">Litchen is an ancient plant as has been found throughout ITB.</div>
+  </div>
+</div>
+       <!--/fade--> 
+		
+        
+    </section>
+    <!-- / col right -->
+</section>
+<!-- /full width column -->
+	
+
+
+
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+</body>
+		<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="#"><img src="images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="#"><img src="images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+</html>

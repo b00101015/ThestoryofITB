@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>local</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+	
+</head>
+
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="images/Asset 1.png" alt="logo">
+		</div>
+	
+			<!-- nav -->
+	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="localarea.html">Local Area</a></li>
+            <li><a href="historyofitb.html">History of ITB</a></li>
+            <li><a href="Ecology.html">Ecology</a></li>
+			<li><a href="personal.html">Personal Stories</a></li>
+			<li><a href="contact.html">Contact ITB</a></li>
+        </ul>
+		<a href="#" id="pull">Menu</a>
+    </nav>
+    <!-- /nav -->	
+		
+		
+	</header>
+	<!--/header-->
+
+	
+	<!--full width column -->
+<section class="row">
+    <h1>The Local Area </h1>
+    <p class="localpara">There is a lot surronding ITB. Take a look at the areas' history and facilities </p>
+    
+    <!-- col left -->
+    <section class="column"> 
+		
+	<!-- Trigger the Modal -->
+<img id="myImg" src="images/oldmap.jpeg" alt="Historic map of Dublin" style="width:100%;max-width:300px">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+		<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+	
+		
+		<!--1916 bombing modal-->	
+		<img id="modaltwo" src="images/bombing.jpg" alt="1916 Bombing" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="modalthree" class="modalfour">
+  <span class="closeone">&times;</span>
+  <img class="modal-contentone" id="modalimage">
+  <div id="captionone"></div>
+</div>
+	<script>
+// Get the modal
+var modal = document.getElementById('modalthree');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('modaltwo');
+var modalImg = document.getElementById("modalimage");
+var captionText = document.getElementById("captionone");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeone")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+		
+		<!--blanchbuilding-->
+		<img id="thirdimage" src="images/file3.jpeg" alt="Grounds being built in 1998" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="imagefour" class="imagefive">
+  <span class="closetwo">&times;</span>
+  <img class="modal-contenttwo" id="modalimageone">
+  <div id="captiontwo"></div>
+</div>
+
+	<script>
+// Get the modal
+var modal = document.getElementById('imagefour');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('thirdimage');
+var modalImg = document.getElementById("modalimageone");
+var captionText = document.getElementById("captiontwo");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closetwo")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>	
+		
+		<!--blanchimages-->
+		<img id="blanchimage" src="images/blanchshopping.JPG" alt="Blanhardstown Shopping Center" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="blanchfour" class="blanchfive">
+  <span class="closethree">&times;</span>
+  <img class="modal-contentthree" id="modalimagetwo">
+  <div id="captionthree"></div>
+</div>
+		<script>
+// Get the modal
+var modal = document.getElementById('blanchfour');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('blanchimage');
+var modalImg = document.getElementById("modalimagetwo");
+var captionText = document.getElementById("captionthree");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closethree")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+		
+	</section>
+    <!-- col left -->
+
+    <!-- col right -->
+	<section class="columnlocal">
+        <h3>Historic map of Dublin.</h3>
+        <p>In 1847, Griffiths valuation started to take place. This valuation was to map every area in Ireland. During this thime Buzzardstown and the rest of Ireland experienced the famine, Both the younger and older generations in the area died.</p><br>
+		<br>
+		<h3>The affect of The Rising</h3>
+		<p>In 1916, The Rising began throughout the country. It was most felt in Dublin. In this time railway lines were nearly destroyed which would have caused heartace throughout the city. During this time, Girls and Boys were still seperated in schools.</p>
+		<p>Throughout this time and just after The Rising, many young people from the surronding area emigrated to belfast and different countries in order to find work.</p>
+		<br>
+		<h3>Grounds for ITB being built</h3>
+		<p>Before ITB was were it is, the site was once owned by one woman and her many goats.</p>
+		<p>Currently the site now has 6 buildings to its name and 1200 hectares of woodland</p>
+		<br>
+		<br>
+		<br>
+		<h3>Blanchardstown now</h3>
+		<p>In 2018, Blanhardstown has expanded alot. It currently has a shopping center, an Draiocht and a college, along with many primary and secondary schools.</p>
+		<p>Blanchardstown is home to 75,000 people. Thats roughly the same as greater Galway City.</p>
+    </section>
+    <!-- / col right -->
+</section>
+<!-- /full width column -->
+	
+	
+	
+	
+	
+	
+</body>
+			<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="#"><img src="images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="#"><img src="images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer --> 
+</html>

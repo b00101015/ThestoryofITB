@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="images/Asset 1.png" alt="logo">
+		</div>
+	
+
+		<!-- nav -->
+	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="localarea.html">Local Area</a></li>
+            <li><a href="historyofitb.html">History of ITB</a></li>
+            <li><a href="Ecology.html">Ecology</a></li>
+			<li><a href="personal.html">Personal Stories</a></li>
+			<li><a href="contact.html">Contact ITB</a></li>
+        </ul>
+		<a href="#" id="pull">Menu</a>
+    </nav>
+    <!-- /nav -->	
+		
+		
+	</header>
+	<!--/header-->
+	
+	
+		
+	<div class="sidenav">
+  <a href="contact.html">Contact ITB</a>
+  <a href="mappage.html">Campus Map</a>
+  <a href="shuttlebus.html">Shuttle Bus</a>
+</div>
+
+<div class="main">
+	<h3> Shuttle Bus Service </h3>
+	
+	<iframe width="500" height="315"
+		src="https://www.youtube.com/embed/OCegRAqZiSE" class="video"	>
+	
+	</iframe>
+	
+<b><p>Shuttle bus pick-up points:</p></b>
+	<ul>
+	<li>Coolmine Train Station</li>
+	<li>Blanchardstown Shopping Centre (Starbucks)</li>
+	<li>National Aquatic Centre</li>
+	<li>ITB campus</li>
+	
+	</ul>
+	
+	<b><p>Fares</p></b>
+	<ul>
+	<li>The cost is €1 per journey or €5 for a weekly ticket (which permits unlimited travel over a weekly period)</li>
+	<li>Passengers may pay with cash or they may use a Leap Card</li>
+	<li><a href="https://www.studentleapcard.ie/#about-3">Click here to purchase a student leap card</a></li>
+	</ul>
+	
+	<b><p>FAQs</p></b>
+	<ul>
+	<li>Pay cash or use Leap Card or use your weekly ticket</li>
+	<li>Weekly tickets allows unlimited travel on the ITB Shuttle Bus</li>
+	<li>Holders of a valid Disability Bus Pass can use the ITB shuttle bus for free once they produce the pass to the driver.</li>
+	<li>The Shuttle Bus is FREE between the National Aquatic Centre (NAC) & ITB</li>
+	<li>Dublin Bus, Bus Eireann and a number of private operator’s (such as Express Bus service 801) operate in the area. Please contact the operator directly.</li>
+	</ul>
+	
+	</div>
+	
+	
+</body>
+		<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="#"><img src="images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="#"><img src="images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+</html>

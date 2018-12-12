@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>personal</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+</head>
+
+<body>
+	<!--header-->
+	<header>
+	<div id="logo">
+		<img src="images/Asset 1.png" alt="logo">
+		</div>
+	
+			<!-- nav -->
+	<nav class="clearfix">
+		<ul class="clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="localarea.html">Local Area</a></li>
+            <li><a href="historyofitb.html">History of ITB</a></li>
+            <li><a href="Ecology.html">Ecology</a></li>
+			<li><a href="personal.html">Personal Stories</a></li>
+			<li><a href="contact.html">Contact ITB</a></li>
+        </ul>
+		<a href="#" id="pull">Menu</a>
+    </nav>
+    <!-- /nav -->	
+		
+	</header>
+	<!--/header-->
+	
+	<!--full width column -->
+<section class="row">
+  <h1>Personal Stories</h1>
+  <p class="personalpara">We talked to a 2nd year student about her first day at ITB over a year ago now.</p>
+    
+    <!-- col left -->
+    <section class="column">
+    <img src="images/avatar.jpg" alt="avatar" class="avatar">
+		<p>Niamh Smith, 19 years old</p>
+		<p>CDM Year 2 student.</p>
+		
+  </section>
+    <!-- col left -->
+     <!-- col right -->
+	<section class="columnpersonal">
+        <h3>The first day at ITB</h3>
+        <p>My first day at ITB was scary. The first time seeing the campus was surreal feeling. I was going into college only knowing two other people in my course (we went to the same school but we wouldnt have been close). I truly didn't know what to expect in college, i just knew it would be a fresh start for me and i could finally be myself compared to in school.</p>
+		<p>Once I stepped into F block I was lost (the room ended up being right in front of me).When I walked into the class, I was overwhelmed by the amount of unfamilar faces I was seeing. After a while, I was able to start to take everything in, thats until we went on a campus tour! As soon as that started I realized how quickly id have to adapt in order to find my classes and be on time. While on this tour, I started talking to Darragh we clicked immediatly due to our nervousness. We ended up stiking to together since.</p>
+		<p>What I remember most about my first day at ITB was how many Macs there were and how excited i was to be able to use them. Also the free food! (I wish it was still free, the price of food is ridiculous)</p>
+    </section>
+    <!-- / col right -->
+</section>
+<!-- /full width column -->
+
+	
+	
+	
+</body>
+			<!-- footer -->
+<footer>
+    <ul>
+        <li class="twitter"><a href="#"><img src="images/twitter_logo.png" alt="Twitter"/></a></li>
+        <li class="facebook"><a href="#"><img src="images/facebook_logo.png" alt="Facebook"/></a></li>
+		<li>Copyright© Niamh Smith</li>
+    </ul>
+</footer>
+<!-- /footer -->
+</html>
